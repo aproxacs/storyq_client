@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.test_files = ["test/base_spec.rb"]
   s.rdoc_options = ["--main", "README.txt"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
-  s.add_dependency("activesupport", ["> 2.0.2"])
-  s.add_dependency("oauth", ["> 0.2.4"])
+  s.add_dependency("activesupport", [">= 2.0.2"])
+  s.add_dependency("oauth", [">= 0.2.4"])
 end
