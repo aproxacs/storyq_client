@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "storyq_client"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.date = "2008-07-09"
   s.summary = "StoryQ client Library"
   s.email = "aproxacs@gmail.com"
