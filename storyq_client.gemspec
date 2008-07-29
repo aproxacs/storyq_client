@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name = "storyq_client"
-  s.version = "0.0.3"
-  s.date = "2008-07-09"
+  s.version = "0.0.4"
+  s.date = "2008-07-29"
   s.summary = "StoryQ client Library"
   s.email = "aproxacs@gmail.com"
   s.homepage = "http://www.aproxacs.com/166"
   s.description = "This library makes it easy to use storyq's Open API. 
-    You can easily upload documents and photos to the storyq and convert them to the flash slide with this library. 
+    You can easily upload documents and photos to the storyq and convert them to the flash slide with this library.
     This follows the restful style but not use active_resource."
   s.has_rdoc = true
   s.authors = ["aproxacs"]

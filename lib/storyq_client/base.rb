@@ -29,17 +29,25 @@ module Storyq
       
     def post url, body, headers={}
       headers["content-type"] ||= 'application/x-www-form-urlencoded' unless body.blank?
-      access_token.request(:post, url, body, header(headers)).body
+      handle_response access_token.request(:post, url, body, header(headers))
     end
     def put url, body, headers={}
       headers["content-type"] ||= 'application/x-www-form-urlencoded' unless body.blank?
-      access_token.request(:put, url, body, header(headers)).body
+      handle_response access_token.request(:put, url, body, header(headers))
     end
     def delete url, headers={}
-      access_token.request(:delete, url, header(headers)).body
+      handle_response access_token.request(:delete, url, header(headers))
     end
     def get url, headers={}
-      access_token.request(:get, url, header(headers)).body
+      handle_response access_token.request(:get, url, header(headers))
+    end
+    
+    def handle_response(response)
+      if response.code=="200"
+        response.body
+      else
+        response.error! 
+      end
     end
     
     def header headers

@@ -1,5 +1,6 @@
 module Storyq
   module Token
+    class AccessTokenNotExist < StandardError;  end
     def access_token
       @access_token ||= create_access_token
     end
@@ -16,7 +17,7 @@ module Storyq
       if access_key and access_secret
         OAuth::AccessToken.new consumer, access_key, access_secret
       else
-        authorize
+        raise AccessTokenNotExist
       end
     end
       

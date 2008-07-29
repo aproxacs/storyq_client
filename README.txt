@@ -87,13 +87,13 @@ photo.destory
 
 == INSTALL:
 
-* sudo gem install storyq_client
+* sudo gem install aproxacs-storyq_client
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 Bryan Kang
+Copyright (c) 2008 chang
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
