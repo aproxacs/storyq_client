@@ -1,3 +1,6 @@
+== 0.1.1 2008-07-31
+* Fixed the bug that couldn't assign access_token to storyq
+
 == 0.1.0 2008-07-31
 * git test
 

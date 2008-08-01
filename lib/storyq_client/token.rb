@@ -6,7 +6,9 @@ module Storyq
     end
     
     def access_token=(token)
-      @access_toke = token
+      @access_token = token
+      @config[:access_key] = token.token
+      @config[:access_secret] = token.secret
     end
     
     def config=(config)
@@ -31,7 +33,7 @@ module Storyq
     end
     
     def access_key
-       @config[:access_key]
+      @config[:access_key]
     end
     
     def access_secret
